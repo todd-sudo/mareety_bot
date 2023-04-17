@@ -155,7 +155,7 @@ async def add_phone_state(message: types.Message, state: FSMContext):
             await state.reset_state()
             return
         await state.update_data(answer1=phone)
-        await message.answer(_('Введите адрес', locale=lang_str), reply_markup=cansel_keyboard(lang_str), disable_notification=True)
+        await message.answer(_('Введите город', locale=lang_str), reply_markup=cansel_keyboard(lang_str), disable_notification=True)
         await RegistrationState.address.set()
 
 
@@ -194,50 +194,10 @@ async def add_address_state(message: types.Message, state: FSMContext):
             text=_(start_message, locale=lang_str), reply_markup=keyboard, disable_notification=True
         )
         await state.finish()
-        # keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        # keyboard.add(types.KeyboardButton(
-        #     text=_("Отправить номер телефона 📱", locale=lang_str),
-        #     request_contact=True)
-        # )
-        #
-        # await message.answer(
-        #     _("Отправь свой контакт:", locale=lang_str),
-        #     reply_markup=keyboard
-        # )
-        # await RegistrationState.contact.set()
+
     else:
         await state.reset_state()
         await message.answer(text=_("Ошибка регистрации", locale=lang_str), disable_notification=True)
-
-
-# @dp.message_handler(
-#     state=RegistrationState.contact, content_types=types.ContentType.CONTACT
-# )
-# async def add_contact_state(message: types.Message, state: FSMContext):
-#     contact_phone = message.contact.phone_number
-#     await message.answer(
-#         _(
-#             "Твой номер успешно получен: {0}".format(
-#                 contact_phone
-#             ),
-#             locale=lang_str
-#         ),
-#         reply_markup=types.ReplyKeyboardRemove()
-#     )
-#     await bot.send_message(
-#         ADMIN_CHAT_ID,
-#         _(
-#             "Добавлен новый пользователь @{0}. Номер телефона: {1}!".format(
-#                 message.from_user.username, contact_phone
-#             ),
-#             locale=lang_str
-#         )
-#     )
-#     keyboard = main_menu_keyboard(lang_str)
-#     await message.answer(
-#         text=_(start_message, locale=lang_str), reply_markup=keyboard
-#     )
-#     await state.finish()
 
 
 @dp.callback_query_handler(text="lang")

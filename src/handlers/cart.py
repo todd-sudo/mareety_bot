@@ -26,20 +26,20 @@ async def _get_cart_products_from_api(
             _("Ваша корзина пуста!"), reply_markup=home_keyboard(), disable_notification=True
         )
         return
-    base_msg = """
+    base_msg = _("""
 Всего товаров: {0}
 Итоговая цена: {1} UZS
 """.format(
         hbold(str(int(cart.total_products))),
         hbold(str(cart.final_price))
-    )
+    ))
 
     _next = cart_product_result.next
     _previous = cart_product_result.previous
 
     products = cart_product_result.results
     if not products:
-        await call.message.answer(_(base_msg), disable_notification=True)
+        await call.message.answer(base_msg, disable_notification=True)
         return
 
     len_products = len(products)

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-04-17 17:13+0300\n"
+"POT-Creation-Date: 2023-04-17 20:14+0300\n"
 "PO-Revision-Date: 2023-04-17 12:41+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -23,7 +23,14 @@ msgstr ""
 msgid "Ваша корзина пуста!"
 msgstr ""
 
-#: src/handlers/cart.py:69 src/handlers/order.py:78 src/handlers/order.py:163
+#: src/handlers/cart.py:34
+msgid ""
+"\n"
+"Всего товаров: {0}\n"
+"Итоговая цена: {1} UZS\n"
+msgstr ""
+
+#: src/handlers/cart.py:69 src/handlers/order.py:78 src/handlers/order.py:164
 #: src/handlers/product.py:69
 msgid "Посмотреть на сайте"
 msgstr ""
@@ -33,27 +40,27 @@ msgid "Удалить из корзины"
 msgstr ""
 
 #: src/handlers/cart.py:90 src/handlers/keyboard.py:130
-#: src/handlers/order.py:84 src/handlers/order.py:168
+#: src/handlers/order.py:84 src/handlers/order.py:169
 #: src/handlers/product.py:29 src/handlers/product.py:89
-#: src/handlers/product.py:101
+#: src/handlers/product.py:102
 msgid "Домой"
 msgstr ""
 
-#: src/handlers/cart.py:124
+#: src/handlers/cart.py:125
 msgid "Успешно удалено"
 msgstr ""
 
-#: src/handlers/cart.py:128
+#: src/handlers/cart.py:129
 msgid "Произошла ошибка удаления"
 msgstr ""
 
-#: src/handlers/cart.py:131 src/handlers/start.py:260
+#: src/handlers/cart.py:132 src/handlers/start.py:223
 msgid "Произошла ошибка"
 msgstr ""
 
-#: src/handlers/cart.py:136 src/handlers/order.py:21 src/handlers/order.py:94
+#: src/handlers/cart.py:137 src/handlers/order.py:21 src/handlers/order.py:94
 #: src/handlers/product.py:15 src/handlers/product.py:40
-#: src/handlers/product.py:115 src/handlers/start.py:35
+#: src/handlers/product.py:116 src/handlers/start.py:35
 #: src/handlers/start.py:44
 msgid "Информация загружается"
 msgstr ""
@@ -72,9 +79,9 @@ msgstr ""
 
 #: src/handlers/keyboard.py:13 src/handlers/keyboard.py:21
 #: src/handlers/order.py:96 src/handlers/order.py:105 src/handlers/start.py:52
-#: src/handlers/start.py:88 src/handlers/start.py:105 src/handlers/start.py:120
-#: src/handlers/start.py:149 src/handlers/start.py:163
-#: src/handlers/start.py:250
+#: src/handlers/start.py:89 src/handlers/start.py:106 src/handlers/start.py:121
+#: src/handlers/start.py:150 src/handlers/start.py:165
+#: src/handlers/start.py:213
 msgid "Отмена"
 msgstr ""
 
@@ -118,11 +125,23 @@ msgstr ""
 msgid "У вас нет заказов"
 msgstr ""
 
+#: src/handlers/order.py:48 src/handlers/order.py:135
+msgid ""
+"\n"
+"Заказ №{0}\n"
+"\n"
+"Всего товаров: {1}\n"
+"Итоговая цена: {2} UZS\n"
+"Статус заказа: {3}\n"
+"Город: {4}\n"
+"Дата заказа: {5}\n"
+msgstr ""
+
 #: src/handlers/order.py:97
 msgid "Начало создания заказа"
 msgstr ""
 
-#: src/handlers/order.py:98 src/handlers/start.py:156
+#: src/handlers/order.py:98
 msgid "Введите адрес"
 msgstr ""
 
@@ -130,7 +149,7 @@ msgstr ""
 msgid "Создание заказа отменено"
 msgstr ""
 
-#: src/handlers/order.py:176
+#: src/handlers/order.py:177
 msgid ""
 "Пользователь @{0} оформил заказ.\n"
 "Номер заказа {1}"
@@ -152,15 +171,15 @@ msgstr ""
 msgid "🛍 Добавить в корзину"
 msgstr ""
 
-#: src/handlers/product.py:109
+#: src/handlers/product.py:110
 msgid "❌ Нет данных"
 msgstr ""
 
-#: src/handlers/product.py:122
+#: src/handlers/product.py:123
 msgid "Товар добавлен в корзину"
 msgstr ""
 
-#: src/handlers/product.py:126
+#: src/handlers/product.py:127
 msgid "Произошла ошибка добавления товара в корзину"
 msgstr ""
 
@@ -188,59 +207,63 @@ msgstr ""
 msgid "Ваш вопрос отправлен! Оператор с Вами свяжется."
 msgstr ""
 
-#: src/handlers/start.py:80 src/handlers/start.py:243
+#: src/handlers/start.py:81 src/handlers/start.py:206
 msgid "Выберите язык"
 msgstr ""
 
-#: src/handlers/start.py:97
+#: src/handlers/start.py:98
 msgid "Введите имя"
 msgstr ""
 
-#: src/handlers/start.py:107 src/handlers/start.py:122
-#: src/handlers/start.py:151 src/handlers/start.py:165
+#: src/handlers/start.py:108 src/handlers/start.py:123
+#: src/handlers/start.py:152 src/handlers/start.py:167
 msgid ""
 "Отмена регистрации\n"
 "\n"
 "Введите /start чтобы начать заново"
 msgstr ""
 
-#: src/handlers/start.py:112
+#: src/handlers/start.py:113
 msgid "Введите фамилию"
 msgstr ""
 
-#: src/handlers/start.py:130
+#: src/handlers/start.py:131
 msgid "Отправить номер телефона 📱"
 msgstr ""
 
-#: src/handlers/start.py:135
+#: src/handlers/start.py:136
 msgid "Введите телефон"
 msgstr ""
 
-#: src/handlers/start.py:183
+#: src/handlers/start.py:158
+msgid "Введите город"
+msgstr ""
+
+#: src/handlers/start.py:186
 msgid "Добавлен новый пользователь @{0}. Номер телефона: {1}!"
 msgstr ""
 
-#: src/handlers/start.py:207
+#: src/handlers/start.py:200
 msgid "Ошибка регистрации"
 msgstr ""
 
-#: src/handlers/start.py:242
+#: src/handlers/start.py:205
 msgid "Изменение языка"
 msgstr ""
 
-#: src/handlers/start.py:252
+#: src/handlers/start.py:215
 msgid "Действие отменено"
 msgstr ""
 
-#: src/handlers/start.py:256
+#: src/handlers/start.py:219
 msgid "Нет такого варианта"
 msgstr ""
 
-#: src/handlers/start.py:263
+#: src/handlers/start.py:226
 msgid "Язык успешно изменен"
 msgstr ""
 
-#: src/handlers/start.py:266
+#: src/handlers/start.py:229
 msgid "Меню"
 msgstr ""
 

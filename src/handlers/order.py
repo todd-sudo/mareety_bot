@@ -34,13 +34,13 @@ async def get_orders_handler(call: types.CallbackQuery):
         address = order_data.address
         created_at = order_data.created_at
 
-        base_msg = """
+        base_msg = _("""
 Заказ №{0}
 
 Всего товаров: {1}
 Итоговая цена: {2} UZS
 Статус заказа: {3}
-Адрес: {4}
+Город: {4}
 Дата заказа: {5}
 """.format(
             order_data.id,
@@ -49,10 +49,10 @@ async def get_orders_handler(call: types.CallbackQuery):
             status_order,
             address,
             created_at
-        )
-        await call.message.answer(text=_(base_msg), disable_notification=True)
+        ))
+        await call.message.answer(base_msg, disable_notification=True)
         if not cart_products:
-            await call.message.answer(_(base_msg), disable_notification=True)
+            await call.message.answer(base_msg, disable_notification=True)
             return
 
         for item in cart_products:
@@ -121,13 +121,13 @@ async def add_address_order_state(message: types.Message, state: FSMContext):
     address = order_data.address
     created_at = order_data.created_at
 
-    base_msg = """
+    base_msg = _("""
 Заказ №{0}
 
 Всего товаров: {1}
 Итоговая цена: {2} UZS
 Статус заказа: {3}
-Адрес: {4}
+Город: {4}
 Дата заказа: {5}
 """.format(
         order_data.id,
@@ -136,11 +136,11 @@ async def add_address_order_state(message: types.Message, state: FSMContext):
         status_order,
         address,
         created_at
-    )
+    ))
     if not cart_products:
-        await message.answer(_(base_msg), reply_markup=home_keyboard(), disable_notification=True)
+        await message.answer(base_msg, reply_markup=home_keyboard(), disable_notification=True)
         return
-    await message.answer(text=_(base_msg), disable_notification=True)
+    await message.answer(text=base_msg, disable_notification=True)
     for item in cart_products:
         item_product = item.product
         item_url = item_product.url
