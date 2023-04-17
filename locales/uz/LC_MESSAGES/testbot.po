@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2023-04-17 20:14+0300\n"
-"PO-Revision-Date: 2023-04-17 17:09+0300\n"
+"PO-Revision-Date: 2023-04-17 20:24+0300\n"
 "Last-Translator: \n"
-"Language: uz\n"
 "Language-Team: uz <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: uz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: src/handlers/cart.py:26
 msgid "Ваша корзина пуста!"
@@ -28,6 +29,9 @@ msgid ""
 "Всего товаров: {0}\n"
 "Итоговая цена: {1} UZS\n"
 msgstr ""
+"\n"
+"Umumiy tovarlar: {0}\n"
+"Umumiy summa: {1} UZS\n"
 
 #: src/handlers/cart.py:69 src/handlers/order.py:78 src/handlers/order.py:164
 #: src/handlers/product.py:69
@@ -135,6 +139,14 @@ msgid ""
 "Город: {4}\n"
 "Дата заказа: {5}\n"
 msgstr ""
+"\n"
+"№ {0} buyurtma\n"
+"\n"
+"Umumiy tovarlar: {1}\n"
+"Umumiy narx: {2} UZS\n"
+"Buyurtma statusi: {3}\n"
+"Shahar: {4}\n"
+"Buyurtma qilingan sana: {5}\n"
 
 #: src/handlers/order.py:97
 msgid "Начало создания заказа"
@@ -249,9 +261,8 @@ msgid "Введите город"
 msgstr "Shahar"
 
 #: src/handlers/start.py:186
-#, fuzzy
 msgid "Добавлен новый пользователь @{0}. Номер телефона: {1}!"
-msgstr "Yangi mijoz qo’shildi @{0}!"
+msgstr "Yangi mijoz ro’yxatdan o’tdi @{0}. Telefon raqami: {1}!"
 
 #: src/handlers/start.py:200
 msgid "Ошибка регистрации"
@@ -276,4 +287,3 @@ msgstr "Til o’zgartirildi"
 #: src/handlers/start.py:229
 msgid "Меню"
 msgstr "Menyu"
-

@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2023-04-17 20:14+0300\n"
-"PO-Revision-Date: 2023-04-17 17:09+0300\n"
+"PO-Revision-Date: 2023-04-17 20:19+0300\n"
 "Last-Translator: \n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: src/handlers/cart.py:26
 msgid "Ваша корзина пуста!"
@@ -28,6 +29,9 @@ msgid ""
 "Всего товаров: {0}\n"
 "Итоговая цена: {1} UZS\n"
 msgstr ""
+"\n"
+"Total {0} items\n"
+"Total Price: {1} UZS\n"
 
 #: src/handlers/cart.py:69 src/handlers/order.py:78 src/handlers/order.py:164
 #: src/handlers/product.py:69
@@ -135,6 +139,12 @@ msgid ""
 "Город: {4}\n"
 "Дата заказа: {5}\n"
 msgstr ""
+"\n"
+"Total items: {1}\n"
+"Total Price: {2} UZS\n"
+"Order Status: {3}\n"
+"City: {4}\n"
+"Order Date: {5}\n"
 
 #: src/handlers/order.py:97
 msgid "Начало создания заказа"
@@ -276,4 +286,3 @@ msgstr "Language changed successfully"
 #: src/handlers/start.py:229
 msgid "Меню"
 msgstr "Menu"
-
