@@ -21,7 +21,7 @@ class HttpClient:
             headers: Optional[dict] = None,
             cookies: Optional[dict] = None,
             json_data: Union[dict, list, None] = None,
-            verify: bool = True,
+            verify: bool = False,
     ):
         if cookies is None:
             cookies = {}
