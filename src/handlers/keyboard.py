@@ -70,7 +70,6 @@ def pagination_keyboard_product(
                 )
             )
         )
-    keyboard.add(types.InlineKeyboardButton(text="⏺", callback_data="nil"))
     if _next:
         _next = _next.replace(str_replace, "")
         if not _next:
@@ -107,7 +106,6 @@ def pagination_keyboard_cart(
                 )
             )
         )
-    keyboard.add(types.InlineKeyboardButton(text=_("⏺"), callback_data="nil"))
     if _next:
         _next = _next.replace(str_replace, "")
         if not _next:
