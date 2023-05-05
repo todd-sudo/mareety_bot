@@ -24,5 +24,5 @@ if __name__ == '__main__':
         dp,
         on_startup=on_startup,
         on_shutdown=on_shutdown,
-        skip_updates=False
+        skip_updates=True
     )
