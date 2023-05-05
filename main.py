@@ -19,12 +19,8 @@ async def on_shutdown(dp):
 
 
 if __name__ == '__main__':
-    executor.start_webhook(
+    executor.start_polling(
         dp,
-        "https://185.124.64.148/"
+        on_startup=on_startup,
+        on_shutdown=on_shutdown,
     )
-    # executor.start_polling(
-    #     dp,
-    #     on_startup=on_startup,
-    #     on_shutdown=on_shutdown,
-    # )
