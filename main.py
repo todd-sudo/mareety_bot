@@ -1,4 +1,3 @@
-
 from aiogram import executor
 
 from src.loader import bot, dp
@@ -8,7 +7,7 @@ from src import handlers
 
 async def on_startup(_):
     logger.success("Start Bot")
-    # await bot.delete_webhook()
+    await bot.delete_webhook()
 
 
 async def on_shutdown(dp):
@@ -24,5 +23,4 @@ if __name__ == '__main__':
         dp,
         on_startup=on_startup,
         on_shutdown=on_shutdown,
-        skip_updates=True
     )
