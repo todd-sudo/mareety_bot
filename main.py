@@ -21,7 +21,7 @@ async def on_shutdown(dp):
 if __name__ == '__main__':
     executor.start_webhook(
         dp,
-        "https://185.124.64.148"
+        "https://185.124.64.148/"
     )
     # executor.start_polling(
     #     dp,
