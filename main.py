@@ -8,7 +8,7 @@ from src import handlers
 
 async def on_startup(_):
     logger.success("Start Bot")
-    await bot.delete_webhook()
+    # await bot.delete_webhook()
 
 
 async def on_shutdown(dp):
